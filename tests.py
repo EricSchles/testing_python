@@ -3,7 +3,8 @@ from string_processor import StringProcessor
 def test_remove_whitespace():
     processor = StringProcessor()
     assert 'HelloThere' == processor.remove_whitespace("Hello There")
-    assert 'HelloThere' == processor.remove_whitespace("HelloThere") 
+    assert 'HelloThere' == processor.remove_whitespace("HelloThere")
+    assert 'Hello_there' == processor.remove_whitespace("Hello_there")
 
 def test_get_upper_case_indices():
     processor = StringProcessor()
