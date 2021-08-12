@@ -44,3 +44,4 @@ def test_to_camel_case():
     assert 'HelloThere' == processor.to_camel_case('hello_there')
     assert 'HelloThere' == processor.to_camel_case('hello__there')
     assert 'Hello*there' == processor.to_camel_case('hello*there')
+    assert 'Hello**there' == processor.to_camel_case('hello**there')
