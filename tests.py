@@ -42,3 +42,4 @@ def test_to_camel_case():
     processor = StringProcessor()
     assert 'HelloThere' == processor.to_camel_case("hello there")
     assert 'HelloThere' == processor.to_camel_case('hello_there')
+    assert 'HelloThere' == processor.to_camel_case('hello__there')
