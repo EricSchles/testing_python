@@ -10,6 +10,7 @@ def test_get_upper_case_indices():
     processor = StringProcessor()
     assert [0, 5] == processor.get_upper_case_indices("HelloThere")
     assert [0, 5, 10] == processor.get_upper_case_indices("HelloThereFriends")
+    assert [1,2,3,4] == processor.get_upper_case_indices("hELLO")
 
 def test_get_lower_case_words():
     processor = StringProcessor()
